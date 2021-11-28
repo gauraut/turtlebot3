@@ -2,7 +2,7 @@
 <arg name="record_walker" default="false" />
 <node pkg="walker" name="walker" type="walker" output="screen" />
 <node pkg="rosbag" type="record" name="rosbag_record_walker"
-args="record -O $(find walker)/launch/all_topics.bag /clock
+args="record -O $(find walker)/results/all_topics.bag /clock
 /cmd_vel
 /gazebo/link_states
 /gazebo/model_states
