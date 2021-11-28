@@ -1,3 +1,10 @@
+///============================================================================
+/// @file        : walker.cpp
+/// @author      : gauraut
+/// @version     : 1.0
+/// @copyright   : MIT License
+/// @brief       : Walker definition
+///============================================================================
 #include <ros/ros.h>
 #include "std_msgs/String.h"
 #include "geometry_msgs/Twist.h"
