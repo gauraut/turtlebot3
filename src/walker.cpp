@@ -27,16 +27,22 @@ void auto_navi(const sensor_msgs::LaserScan::ConstPtr& msg) {
                        >= 0.5 && msg->ranges[339] >= 0.5) {
       turn.linear.x = 0.3;
       turn.angular.z = 0;
+      ROS_INFO_STREAM("Robot's speed is now " << turn.linear.x);
     } else {
         if (msg->ranges[89] >= msg->ranges[179]) {
           turn.linear.x = -0.6;
           turn.angular.z = 1.571;
+          ROS_INFO_STREAM("Robot's speed is now "
+              << turn.linear.x);
         } else {
           turn.linear.x = -0.6;
           turn.angular.z = -1.571;
+          ROS_INFO_STREAM("Robot's speed is now "
+              << turn.linear.x);
       }
     }
     vel_pub.publish(turn);  // publish the message
+    ROS_INFO_STREAM("Now publishing data.");
     ros::spin();
   }
 }

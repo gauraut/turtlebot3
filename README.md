@@ -1,4 +1,4 @@
-# Beginner tutorials
+# Turtlebot3 Walker
 ## Overview
 This code is a simple walker node which uses the turtlebot3 model and autonomously navigates it through a world with obstacles. The walker node publishes messages to the /cmd_vel topic of the turtlebot3 which runs the robot in the simulation world. For this, the robot uses sensor_msgs/LaserScan data, more specifically, from the "ranges" array.
 ## License
