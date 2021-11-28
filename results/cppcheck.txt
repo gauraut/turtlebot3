@@ -1,0 +1,5 @@
+src/walker.cpp:53:29: style: Variable 'sub_laser' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub_laser = nh.subscribe("/scan", 1, auto_navi);
+                            ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
