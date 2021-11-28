@@ -1,0 +1,3 @@
+<launch>
+<node pkg="walker" name="walker" type="walker" output="screen" />
+</launch>
