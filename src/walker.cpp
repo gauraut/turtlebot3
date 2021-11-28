@@ -10,7 +10,6 @@ void auto_navi(const sensor_msgs::LaserScan::ConstPtr& msg) {
   geometry_msgs::Twist turn;
   while (ros::ok) {
     if (msg->ranges[0] >= 0.5 && msg->ranges[29] >= 0.5 && msg->ranges[339] >= 0.5) {
-      //std::cout << msg->ranges.size() << std::endl;
       turn.linear.x = 0.3;
       turn.angular.z = 0;
     } else {
